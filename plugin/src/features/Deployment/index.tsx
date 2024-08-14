@@ -83,7 +83,7 @@ export const Deployment: React.FC<DeploymentProps> = ({ setActiveTab }) => {
 
   useEffect(() => {
     let name: string | undefined
-    if (provider?.network?.chainId === 300) name = 'sepolia'
+    if (provider?.network?.chainId === 11124) name = 'abstracttestnet'
     if (provider?.network?.chainId === 324) name = 'mainnet'
     setSelectedChainName(name)
   }, [provider, env])
